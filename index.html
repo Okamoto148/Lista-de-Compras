@@ -218,24 +218,18 @@
     },
 
     
-    listaComprasOriginal(){
+     listaComprasOriginal(){
       this.listaCompras= [{id: 1, description: "Arroz", feito: this.feito, quant: 12, tipo: "Secos"}, {id: 2, description: "Feijão", feito: this.feito, quant: 5, tipo: "Secos"}, {id: 3, description: "Tempero", feito: this.feito, quant: 2, tipo: "Secos"}, {id: 4, description: "Açúcar", feito: this.feito, quant: 5, tipo: "Secos"}, {id: 5, description: "Milho", feito: this.feito, quant: 3, tipo: "Secos"},
             {id: 6, description: "Ervilha", feito: this.feito, quant: 3, tipo: "Secos"}, {id: 7, description: "Filtro de café", feito: this.feito, quant: 1, tipo: "Secos"}, {id: 8, description: "Café", feito: this.feito, quant: 1, tipo: "Secos"}, {id: 9, description: "Bombom", feito: this.feito, quant: 4, tipo: "Secos"}, {id: 10, description: "Farinha de trigo", feito: this.feito, quant: 2, tipo: "Secos"}, 
             {id: 11, description: "Fubá", feito: this.feito, quant: 1, tipo: "Secos"}, {id: 12, description: "Leite", feito: this.feito, quant: 2, tipo: "Secos"}, {id: 13, description: "Farinha láctea", feito: this.feito, quant: 2, tipo: "Secos"}, {id: 14, description: "Torrada", feito: this.feito, quant: 4, tipo: "Secos"}, {id: 15, description: "Batata palha", feito: this.feito, quant: 3, tipo: "Secos"}, 
             {id: 16, description: "Batata", feito: this.feito, quant: 3, tipo: "Secos"}, {id: 17, description: "Salgadinhos", feito: this.feito, quant: 3, tipo: "Secos"}, {id: 18, description: "Cream Cracker", feito: this.feito, quant: 2, tipo: "Secos"}, {id: 19, description: "Sal", feito: this.feito, quant: 1, tipo: "Secos"}, {id: 20, description: "Fermento", feito: this.feito, quant: 1, tipo: "Secos"}, 
-            ,
-
-
             {id: 51, description: "Pasta de dente", feito: this.feito, quant: 2, tipo: "Limpeza"}, {id: 51, description: "Shampoo", feito: this.feito, quant: 2, tipo: "Limpeza"}, {id: 52, description: "Pano", feito: this.feito, quant: 2, tipo: "Limpeza"}, {id: 53, description: "Escova de dente", feito: this.feito, quant: 3, tipo: "Limpeza"}, {id: 54, description: "Sabonete", feito: this.feito, quant: 6, tipo: "Limpeza"}, 
             {id: 55, description: "Sabonete líquido", feito: this.feito, quant: 2, tipo: "Limpeza"}, {id: 56, description: "Sabonete Daniel", feito: this.feito, quant: 2, tipo: "Limpeza"}, {id: 57, description: "Esponja", feito: this.feito, quant: 2, tipo: "Limpeza"},
-            
-            
             {id: 80, description: "Frango", feito: this.feito, quant: 5, tipo: "Congelados"}, {id: 81, description: "Lasanhas", feito: this.feito, quant: 2, tipo: "Congelados"}, {id: 82, description: "Torta", feito: this.feito, quant: 2, tipo: "Congelados"}, {id: 83, description: "Vegetais", feito: this.feito, quant: 3, tipo: "Congelados"}, {id: 64, description: "Almondega", feito: this.feito, quant: 2, tipo: "Congelados"}, 
             {id: 85, description: "Salgadinho Congelado", feito: this.feito, quant: 5, tipo: "Congelados"}, {id: 86, description: "Folhadinho", feito: this.feito, quant: 2, tipo: "Congelados"},
-            ,]
+            ]
             
     },
-
         apagar(index) {
           this.listaCompras.splice(index, 1);
           localStorage.setItem("listaCompras", JSON.stringify(this.listaCompras));
